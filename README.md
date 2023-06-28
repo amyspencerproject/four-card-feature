@@ -43,7 +43,8 @@ Users should be able to:
 
 ### What I learned
 
--
+- Chose to use CSS Grid as the layout for this challenge. The design has both rows and columns.
+- In mobile view not sure if I need rows in the card container. And then I am not sure if I should make each card a grid element and use columns so place the icon or if I should just use a margin on the left to push the icon over.
 
 ### Continued development
 
