@@ -82,6 +82,7 @@ select {
   --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
   --text-dark-grey: hsl(234, 12%, 34%);
+  --text-light-grey: hsl(229, 6%, 66%);
   --card-background: hsl(0, 0%, 98%);
   --shadow: hsl(229, 6%, 66%);
 }
@@ -124,10 +125,15 @@ body {
 .header-bold {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-top: 0.5rem;
 }
 
 .body-text {
+  color: var(--text-light-grey);
   font-weight: 200;
+  line-height: 1.67;
+  letter-spacing: 0.1px;
+  margin-top: 1rem;
 }
 
 .card {
@@ -136,18 +142,27 @@ body {
   grid-column: 1 / -1;
   padding: 1rem;
   border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  /* grid-template-rows: ; */
 }
 
 .card-title {
   font-size: 1.25rem;
+  grid-column: 1 / -1;
 }
 
 .card-text {
+  color: var(--text-light-grey);
+  font-size: 0.8125rem;
   font-weight: 200;
+  grid-column: 1 / -1;
 }
 
 .card-icon {
-  margin: 2rem 0 1rem 13rem;
+  margin: 1.5rem 1rem;
+  grid-column: 3 / -1;
 }
 
 .supervisor {
