@@ -99,14 +99,15 @@ body {
   margin-bottom: 4.5rem;
 
   display: grid;
+  place-content: center;
   gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
   /* grid-template-rows: repeat(5, 1fr); */
-  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  /* grid-template-rows: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 
 .header-wrap {
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   margin-top: 7rem;
   margin-inline: 2rem;
   margin-bottom: 3.5rem;
@@ -139,9 +140,10 @@ body {
 .card {
   margin: 0.5rem 2rem;
   box-shadow: 0 4px 4px var(--shadow);
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   padding: 1rem;
   border-radius: 8px;
+  max-width: 21.875rem;
 
   display: grid;
   grid-template-columns: repeat(3, minmax(50px, 1fr));
@@ -185,13 +187,20 @@ body {
 
 @media screen and (min-width: 60rem) {
   .card-container {
-    column-gap: 5rem;
+    column-gap: 8rem;
     grid-template-columns: repeat(12, 1fr);
     /* grid-template-rows: repeat(5, 1fr); */
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   }
+
+  .header-wrap {
+    grid-column: 1 / -1;
+    /* grid-column: 6 / span 4; */
+  }
+
   .card {
     max-width: 21.875rem;
+    margin: 0;
   }
 
   .supervisor {
