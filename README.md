@@ -45,6 +45,12 @@ Users should be able to:
 
 - Chose to use CSS Grid as the layout for this challenge. The design has both rows and columns.
 - In mobile view not sure if I need rows in the card container. And then I am not sure if I should make each card a grid element and use columns so place the icon or if I should just use a margin on the left to push the icon over.
+- All the cards in the mobile view are sticking to the left. I tried a place `content: center` in the card container div but this does not have any affect at all.
+- The Supervisor card in the desktop view is fixed with 1fr of space on the left which doesn't match the spacing on the right. I tried the following and played with changing the width of the 12th column to be larger than the 1st column. It kinda works but feels hacky.
+
+```
+ grid-template-columns: 1rem repeat(10, 1fr) 15rem;
+```
 
 ### Continued development
 

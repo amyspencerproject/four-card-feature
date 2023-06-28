@@ -114,10 +114,6 @@ body {
   text-align: center;
 }
 
-.header-wrap > * {
-  /* row-gap: 2rem; */
-}
-
 .header-thin {
   font-size: 1.5rem;
   font-weight: 200;
@@ -189,7 +185,7 @@ body {
   .card-container {
     column-gap: 8rem;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(5, 1fr); */
+    grid-template-columns: 1rem repeat(10, 1fr) 15rem;
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   }
 
