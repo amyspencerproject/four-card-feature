@@ -75,5 +75,58 @@ select {
 }
 
 /* ========================= Base Styles ========================= */
+/* ======= Variables ======= */
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --text-dark-grey: hsl(234, 12%, 34%);
+  --card-background: hsl(0, 0%, 98%);
+  --shadow: hsl(229, 6%, 66%);
+}
+
+body {
+  background-color: var(--card-background);
+}
+
+.card-container {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  background-color: var(--card-background);
+  display: grid;
+  place-content: center;
+}
+
+.header-thin {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.header-bold {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.body-text {
+  font-weight: 200;
+}
+
+.card {
+  margin: 1rem;
+  box-shadow: 5px 5px 10px var(--shadow);
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-weight: 200;
+}
 
 /* ========================= Media Queriers ========================= */
+
+@media screen and (min-width: 60rem) {
+}

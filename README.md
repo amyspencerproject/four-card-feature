@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Github Repo URL: [Four Card Repo](https://github.com/amyspencerproject/qr-code)
-- Live Site URL: [Four Card Page](https://amyspencerproject.github.io/qr-code/)
+- Github Repo URL: [Four Card Repo](https://github.com/amyspencerproject/four-card-feature)
+- Live Site URL: [Four Card Page](https://amyspencerproject.github.io/four-card-feature/)
 
 ## My process
 
