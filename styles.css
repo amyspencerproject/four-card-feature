@@ -194,12 +194,25 @@ body {
     align-items: center;
   }
 
+  .header-thin {
+    font-size: 2.25rem;
+  }
+
+  .header-bold {
+    font-size: 2.25rem;
+  }
+
   .body-text {
     width: 37%;
   }
 
   .card {
     margin: 0;
+    padding: 2.5rem 2rem;
+  }
+
+  .card-text {
+    margin-right: 4rem;
   }
 
   .supervisor {
